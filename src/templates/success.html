@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker-compose</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Docker-compose executado com sucesso!</h1>
+    <svg width="200" height="200" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="circle">
+        <circle cx="60" cy="60" r="50" stroke="#444" stroke-width="10" fill="none"/>
+        <circle id="progressCircle" cx="60" cy="60" r="50" stroke="#4caf50" stroke-width="10" fill="none"
+                stroke-dasharray="314.159" stroke-dashoffset="0"/>
+        <text x="60" y="60" text-anchor="middle" alignment-baseline="middle"
+              transform="rotate(90, 60, 60)" class="countdown-text">15</text>
+    </svg>
+    <pre>{{ output }}</pre>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

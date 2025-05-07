@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker-compose</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Docker-compose</h1>
+    <form id="dockerForm" action="/rodar-docker-compose" method="post">
+        <button id="startButton" type="submit">Iniciar</button>    
+    </form>
+    <div id="loadingMessage" style="display: none; font-size: 1.5em; margin-top: 20px;">
+       Aguarde, estamos processando...
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

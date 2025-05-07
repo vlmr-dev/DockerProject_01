@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker-compose</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Erro ao executar o Docker-compose</h1>
+    <pre>{{ erro }}</pre>
+    <p>Você será redirecionado em 15 segundos...</p>
+    <script>
+        setTimeout(() => {
+            window.location.href = "https://www.google.com";
+        }, 15000);
+    </script>
+</body>
+</html>
